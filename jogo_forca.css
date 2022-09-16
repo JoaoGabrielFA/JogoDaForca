@@ -5,15 +5,15 @@
 }
 
 header{
-    max-height: 10%;
+    height: 10%;
 }
 
 #categoria {
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 300%;
     text-align: center;
-    padding-top: 1em;
+    padding-top: 5%;
 }
 
 
@@ -26,16 +26,18 @@ main{
     align-items: center;
 }
 
-#campoImagem {
-    min-width: 940px;
-}
-
 #imagem{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
-    height: auto;
+    height: 40%;
+    width: auto;
+}
+
+#palavra_secreta{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
 }
 
 #iniciar{
@@ -45,18 +47,12 @@ main{
     background-color: #FFFFFF;
     border: none;
     border-radius: 0.2em;
-    font-size: 4em;
+    font-size: 400%;
     font-weight: bold;
     color: #000000;
     padding: 0.1em;
 }
 
-#palavra_secreta {
-    min-width: 940px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5em;
-}
 
 .letras {
     color: #FFFFFF;
@@ -77,15 +73,15 @@ main{
 #teclado {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     align-items: center;
     padding-bottom: 8em;
 }
 
 .teclas{
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .teclas button {
