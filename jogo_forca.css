@@ -155,12 +155,12 @@ label {
 /*---MODAL---*/
 
 #myModal{
-    margin-top: 25em;
+    margin-top: 40%;
 }
 
 .modal-content{
     height: 25em;
-    width: auto;
+    width: 90%;
 }
 
 .modal-close{
@@ -191,7 +191,7 @@ label {
         height: 8vh;
     }
     #categoria, #iniciar, .letras, .letrasEspaco{
-        font-size: 6vh;
+        font-size: 5vh;
     }
     #imagem{
         width: 40vh;
@@ -200,5 +200,9 @@ label {
     
     #teclado{
         width: 60%;
+    }
+    
+    .contato{
+        padding: 40px 0 40px;
     }
 }
