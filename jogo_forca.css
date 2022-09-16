@@ -206,12 +206,21 @@ label {
         width: 60%;
     }
     
+    .teclas button{
+        width: 3vh;
+        margin: 0 0.2vh 0.4vh 0.2vh;
+    }
+    
     .contato{
         padding: 40px 0 40px;
     }
     
     footer p, label{
-        font-size: 1.5vh;
+        font-size: 2vh;
+    }
+    
+    footer img{
+        
     }
     
     #myModal{
