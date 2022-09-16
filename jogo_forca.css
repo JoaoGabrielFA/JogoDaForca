@@ -30,7 +30,7 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 30vh;
+    max-height: 30vh;
     width: auto;
 }
 
@@ -57,7 +57,7 @@ main{
 .letras {
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3vh;
     border-bottom: 0.1em solid #FFFFFF;
     margin: 0.1em;
 }
@@ -65,7 +65,7 @@ main{
 .letrasEspaco {
     color: #000000;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3vh;
     border-bottom: 0.1em;
     margin: 0.1em;
 }
@@ -183,4 +183,10 @@ label {
     border: none;
     border-radius: 10px;
     padding: 10px;
+}
+
+@media screen and (min-width: 900px){
+    .teclado{
+        width: 60%;
+    }
 }
