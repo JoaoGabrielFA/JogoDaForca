@@ -155,12 +155,16 @@ label {
 /*---MODAL---*/
 
 #myModal{
-    margin-top: 40%;
+    width: 80%;
+    margin-top: 10%
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
 }
 
 .modal-content{
     height: 25em;
-    width: 90%;
+    width: 100%;
 }
 
 .modal-close{
