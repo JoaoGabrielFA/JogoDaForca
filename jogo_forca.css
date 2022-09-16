@@ -2,7 +2,8 @@
     background-color: #3CB371;
     width: 100%;
     height: 100%;
-    margin-top: 30px;
+    margin: 30px 0 0 0;
+    padding: 0;
 }
 
 header{
@@ -113,7 +114,9 @@ footer {
     text-align: center;
     background-color: #2E8B57;
     width: 100%;
-    max-height: 10%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 footer * {
@@ -121,36 +124,36 @@ footer * {
 }
 
 .contato {
-    padding: 60px 0 60px;
+    padding: 2vh 0 2vh;
 }
 
 footer div {
     display: inline-block;
-    padding: 0 10px 0 10px;
+    padding: 0 1vh 0 1vh;
 }
 
 footer p {
     color: #FFFFFF;
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 1vh;
+    margin-bottom: 1vh;
 }
 
 a {
     color: #FFFFFF;
     text-decoration: none;
-    padding-top: 10px;
+    padding-top: 1vh;
 }
 
 footer img {
     display: inline-block;
-    width: 80px;
+    width: 5vh;
     height: auto;
-    padding: 10px;
+    padding: 1vh;
 }
 
 label {
     display: block;
-    font-size: 20px;
+    font-size: 1vh;
 }
 
 /*---MODAL---*/
