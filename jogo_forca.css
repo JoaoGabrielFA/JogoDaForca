@@ -7,7 +7,6 @@
 header{
     height: 5vh;
     padding-bottom: 0.5vh;
-    text-align: center;
 }
 
 #categoria {
@@ -15,7 +14,7 @@ header{
     font-weight: bold;
     font-size: 3vh;
     text-align: center;
-    padding-top: 1vh 0 1vh 0;
+    padding: 1vh 0 1vh 0;
 }
 
 
@@ -188,6 +187,9 @@ label {
 }
 
 @media screen and (min-width: 1200px){
+    header{
+        height: 8vh;
+    }
     #categoria, #iniciar, .letras, .letrasEspaco{
         font-size: 6vh;
     }
