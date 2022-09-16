@@ -188,6 +188,7 @@ label {
     border: none;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1200px){
@@ -204,11 +205,6 @@ label {
     
     #teclado{
         width: 60%;
-    }
-    
-    .teclas button{
-        width: 3vh;
-        margin: 0 0.2vh 0.4vh 0.2vh;
     }
     
     .contato{
