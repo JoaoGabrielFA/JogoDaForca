@@ -210,6 +210,10 @@ label {
         padding: 40px 0 40px;
     }
     
+    footer p, label{
+        font-size: 2vh;
+    }
+    
     #myModal{
         margin-top: 20%;
     }
