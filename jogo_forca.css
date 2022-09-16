@@ -5,7 +5,7 @@
 }
 
 header{
-    height: 10%;
+    height: 5vh;
 }
 
 #categoria {
@@ -37,7 +37,7 @@ main{
 #palavra_secreta{
     display: flex;
     justify-content: center;
-    padding-bottom: 10%;
+    padding-bottom: 3vh;
 }
 
 #iniciar{
@@ -50,7 +50,6 @@ main{
     font-size: 3vh;
     font-weight: bold;
     color: #000000;
-    padding: 0.1em;
 }
 
 
