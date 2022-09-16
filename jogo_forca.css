@@ -155,35 +155,31 @@ label {
 /*---MODAL---*/
 
 #myModal{
-    width: 80%;
-    margin-top: 10%
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
+    margin: 30% 0 0 0;
 }
 
 .modal-content{
-    height: 25em;
     width: 100%;
+    aspect-ratio: 16.9;
 }
 
 .modal-close{
-    font-size: 3em;
+    font-size: 3vh;
 }
 
 .modal-title{
-    font-size: 3em;
+    font-size: 3vh;
     font-weight: bold;
 }
 
 .modal-body{
-    font-size: 2em;
+    font-size: 2vh;
     font-style: italic;
 }
 
 .modal-button{
     color: #FFFFFF;
-    font-size: 1.5em;
+    font-size: 1.5vh;
     background-color: #3CB371;
     border: none;
     border-radius: 10px;
