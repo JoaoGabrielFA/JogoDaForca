@@ -11,9 +11,9 @@ header{
 #categoria {
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 300%;
+    font-size: 3vh;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 2vh;
 }
 
 
@@ -30,7 +30,7 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 40%;
+    height: 30%;
     width: auto;
 }
 
@@ -47,7 +47,7 @@ main{
     background-color: #FFFFFF;
     border: none;
     border-radius: 0.2em;
-    font-size: 400%;
+    font-size: 4vh;
     font-weight: bold;
     color: #000000;
     padding: 0.1em;
@@ -90,7 +90,7 @@ main{
     border: none;
     border-radius: 0.2em;
     font-weight: bold;
-    font-size: 250%;
+    font-size: 2.5vh;
     width: 9%;
     aspect-ratio: 1.1;
     margin: 0 0.5% 1% 0.5%;
