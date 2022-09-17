@@ -78,6 +78,11 @@ main{
     text-align: center;
 }
 
+.teclas{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .teclas button {
     background-color: #FFFFFF;
     color: #000000;
