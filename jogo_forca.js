@@ -208,19 +208,19 @@ const alfabeto = ["A", "B", "C", "D", "E", "F",
 let lista_dinamica = [];
 
 let palavra_sorteada;
-let categoria_da_palavra;
+let categoria_da_palavra_sorteada;
 
 let chances = 6;
 
 function sorteiaPalavra(){
-    var aleatorio = Math.round(Math.random()*palavras.length - 1);
+    var aleatorio = Math.floor(Math.random()*palavras.length - 1);
     palavra_sorteada = palavras[aleatorio].nome;
-    categoria_da_palavra = palavras[aleatorio].categoria;
+    categoria_da_palavra_sorteada = palavras[aleatorio].categoria;
 }
 
 function iniciar(){
     const categoria_tela = document.getElementById("categoria");
-    categoria_tela.innerHTML = categoria_da_palavra;
+    categoria_tela.innerHTML = categoria_da_palavra_sorteada;
     
     const palavra_tela = document.getElementById("palavra_secreta");
     palavra_tela.innerHTML = " ";
@@ -253,7 +253,7 @@ function checarLetra(letra){
     
     if(chances > 0){
         mudaCorTecla("tecla_" + letra, false);
-        checarPalavra(letra);
+        checarLetraNaPalavra(letra);
         iniciar();
     }
 }
@@ -269,7 +269,7 @@ function mudaCorTecla(tecla, acertou){
     }
 }
 
-function checarPalavra(letra){
+function checarLetraNaPalavra(letra){
     const posicao = palavra_sorteada.indexOf(letra);
     
     if(posicao < 0){
@@ -359,7 +359,6 @@ function reiniciarJogo(){
     resetaCor();
     lista_dinamica = [];
     iniciar();
-    
 }
 
 sorteiaPalavra();
