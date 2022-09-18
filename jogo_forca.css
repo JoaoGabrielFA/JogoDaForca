@@ -214,9 +214,6 @@ label {
 }
 
 @media screen and (min-width: 1200px){
-    header{
-        height: 8vh;
-    }
     #categoria, #iniciar, .letras, .letrasEspaco{
         font-size: 5vh;
     }
@@ -225,12 +222,16 @@ label {
         height: auto;
     }
     
-    #teclado{
-        
-    }
-    
     .contato{
         padding: 40px 0 40px;
+    }
+    
+    footer img{
+        width: 3vw;
+    }
+    
+    footer p, label{
+        font-size: 1vw;
     }
     
     #myModal{
