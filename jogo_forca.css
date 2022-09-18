@@ -223,13 +223,14 @@ label {
     }
     
     footer{
+        max-height: 100%;
         position: fixed;
         bottom: 0;
         left: 0
     }
     
     .contato{
-        padding: 2vw 0 2vw;
+        padding: 1.5vw 0 1.5vw;
     }
     
     footer img{
