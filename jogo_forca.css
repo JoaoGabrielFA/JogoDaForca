@@ -1,11 +1,11 @@
-body{
+body {
     background-color: #3CB371;
     width: 100%;
     height: 100%;
     margin: 30px 0 0 0;
 }
 
-header{
+header {
     height: 5vh;
     padding-bottom: 0.5vh;
 }
@@ -19,7 +19,7 @@ header{
 }
 
 
-main{
+main {
     max-width: 1200px;
     height: 80%;
     display: block;
@@ -29,7 +29,7 @@ main{
     margin-bottom: 10%;
 }
 
-#imagem{
+#imagem {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -37,13 +37,13 @@ main{
     width: auto;
 }
 
-#palavra_secreta{
+#palavra_secreta {
     display: flex;
     justify-content: center;
     padding-bottom: 3vh;
 }
 
-#iniciar{
+#iniciar {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -83,7 +83,7 @@ main{
     padding-bottom: 30px;
 }
 
-.teclas{
+.teclas {
     margin-left: auto;
     margin-right: auto;
 }
@@ -116,6 +116,7 @@ footer {
     background-color: #2E8B57;
     width: 100%;
     max-height: 10%;
+    padding-top: auto;
 }
 
 footer * {
@@ -157,30 +158,30 @@ label {
 
 /*---MODAL---*/
 
-#myModal{
+#myModal {
     margin-top: 30%;
 }
 
-.modal-content{
+.modal-content {
     width: 100%;
     aspect-ratio: 16.9;
 }
 
-.modal-close{
+.modal-close {
     font-size: 3vh;
 }
 
-.modal-title{
+.modal-title {
     font-size: 3vh;
     font-weight: bold;
 }
 
-.modal-body{
+.modal-body {
     font-size: 2vh;
     font-style: italic;
 }
 
-.modal-button{
+.modal-button {
     color: #FFFFFF;
     font-size: 1.5vh;
     background-color: #3CB371;
@@ -190,58 +191,58 @@ label {
     cursor: pointer;
 }
 
-@media (orientation: landscape){
-    .teclas button{
+@media (orientation: landscape) {
+    .teclas button {
         font-size: 2.5vw;
         width: 4vw;
         margin: 0 0.2vw 0.4vw 0.2vw;
     }
     
-    footer img{
+    footer img {
         width: 5vw;
     }
     
-    footer p, label{
+    footer p, label {
         font-size: 2vw;
     }
     
-    #myModal{
+    #myModal {
         margin-top: 10%;
     }
 }
 
-@media screen and (min-width: 1200px){
-    header{
+@media screen and (min-width: 1200px) {
+    header {
         height: 8vh;
     }
-    #categoria, #iniciar, .letras, .letrasEspaco{
+    #categoria, #iniciar, .letras, .letrasEspaco {
         font-size: 5vh;
     }
-    #imagem{
+    #imagem {
         width: 30vh;
         height: auto;
     }
     
-    footer{
+    footer {
         max-height: 100%;
         position: fixed;
         bottom: 0;
         left: 0
     }
     
-    .contato{
+    .contato {
         padding: 1.5vw 0 1.5vw;
     }
     
-    footer img{
+    footer img {
         width: 3vw;
     }
     
-    footer p, label{
+    footer p, label {
         font-size: 1vw;
     }
     
-    #myModal{
+    #myModal {
         margin-top: 20%;
     }
 }
