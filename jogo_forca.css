@@ -144,7 +144,7 @@ a {
 
 footer img {
     display: inline-block;
-    width: 4vh;
+    width: 5vh;
     height: auto;
     padding: 1vh;
 }
@@ -204,6 +204,10 @@ label {
         margin: 0 0.2vw 0.4vw 0.2vw;
     }
     
+    footer img {
+        width: 5vw;
+    }
+    
     footer p, label {
         font-size: 2vw;
     }
@@ -234,6 +238,10 @@ label {
     
     .contato {
         padding: 1.5vw 0 1.5vw;
+    }
+    
+    footer img {
+        width: 3vw;
     }
     
     footer p, label {
