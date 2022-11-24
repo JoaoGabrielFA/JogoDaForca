@@ -200,11 +200,9 @@ const palavras = [
         categoria: "INSETO"
     }
 ];
-const alfabeto = ["A", "B", "C", "D", "E", "F", 
-                  "G", "H", "I", "J", "K", "L", 
-                  "M", "N", "O", "P", "Q", "R", 
-                  "S", "T", "U", "V", "W", "X", 
-                  "Y", "Z"];
+const alfabeto = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
+                  "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
+];
 let lista_dinamica = [];
 
 let palavra_sorteada;
@@ -260,12 +258,10 @@ function checarLetra(letra){
 
 function mudaCorTecla(tecla, acertou){
     if(acertou == false){
-    document.getElementById(tecla).style.background = "#8B0000";
-    document.getElementById(tecla).style.color = "#FFFFFF";
+        document.getElementById(tecla).classList.add("errada");
     }
     else{
-    document.getElementById(tecla).style.background = "#228B22";
-    document.getElementById(tecla).style.color = "#FFFFFF";
+        document.getElementById(tecla).classList.add("certa");
     }
 }
 
@@ -344,8 +340,8 @@ function abreModal(titulo, mensagem){
 function resetaCor(){
     for(i = 0; i < alfabeto.length; i++){
         let tecla = "tecla_" + alfabeto[i];
-        document.getElementById(tecla).style.background = "#FFFFFF";
-        document.getElementById(tecla).style.color = "#000000";
+        document.getElementById(tecla).classList.remove("errada");
+        document.getElementById(tecla).classList.remove("certa");
         document.getElementById(tecla).disabled = false;
     }
 }

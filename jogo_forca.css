@@ -1,254 +1,250 @@
-body {
-    background-color: #3CB371;
-    width: 100%;
-    height: 100%;
-    margin: 30px 0 0 0;
+@font-face {
+    font-family: "pixel";
+    src: url("PixelFont.ttf")
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #721616;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    max-width: 800px;
+}
+
+header, #iniciar, .letras, .teclas button, footer p {
+    text-shadow: 2px 2px 2px #00000061;
 }
 
 header {
-    height: 5vh;
-    padding-bottom: 0.5vh;
-}
+    height: 7vh;
+    width: 100vw;
 
-#categoria {
+    margin-top: 1vh;
+
     color: #FFFFFF;
-    font-weight: bold;
-    font-size: 3vh;
     text-align: center;
-    padding: 1vh 0 1vh 0;
-}
-
-
-main {
-    max-width: 1200px;
-    height: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    margin-bottom: 10%;
+    font-family: "pixel";
+    font-size: 2rem;
 }
 
 #imagem {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 30vh;
-    width: auto;
+    border-bottom: .5rem solid #3d2004;
+}
+
+#iniciar {
+    width: 18vw;
+    max-width: 140px;
+    aspect-ratio: 2/1;
+
+    margin: 2vh 0;
+
+    background-image: url("imagens/iniciar.png");
+    background-size: cover;
+
+    color: #FFFFFF;
+    font-family: "pixel";
+    font-size: 1.5rem;
 }
 
 #palavra_secreta {
     display: flex;
     justify-content: center;
-    padding-bottom: 3vh;
-}
 
-#iniciar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 0.2em;
-    font-size: 3vh;
-    font-weight: bold;
-    color: #000000;
-    cursor: pointer;
+    margin: 2vh 0;
 }
-
 
 .letras {
+    width: 1rem;
+    margin: 0 .5rem;
+
+    border-bottom: 0.2em solid #FFFFFF;
+
     color: #FFFFFF;
-    font-weight: bold;
-    font-size: 3vh;
-    border-bottom: 0.1em solid #FFFFFF;
-    margin: 0.1em;
+    font-family: "pixel";
+    text-align: center;
+    
 }
 
 .letrasEspaco {
-    color: #000000;
-    font-weight: bold;
-    font-size: 3vh;
-    border-bottom: 0.1em;
-    margin: 0.1em;
+    width: 1.1rem;
+    border-bottom: 0.5em;
 }
 
 #teclado {
-    height: 20%;
-    width: auto;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
+
+    width: 100%;
+
+    padding: .5vh 0;
 }
 
-.teclas {
-    margin-left: auto;
-    margin-right: auto;
-}
+.teclas button{
+    width: 9vw;
+    max-width: 70px;
+    aspect-ratio: 1/1;
 
-.teclas button {
-    background-color: #FFFFFF;
-    color: #000000;
+    margin: .2vh 0;
+
     border: none;
-    border-radius: 0.2em;
-    font-weight: bold;
-    font-size: 2.5vh;
-    width: 9%;
-    aspect-ratio: 1.1;
-    margin: 0 0.5% 1% 0.5%;
+
+    background-image: url("imagens/tecla.png");
+    background-size: cover;
+
+    color: white;
+    font-family: "pixel";
+    font-size: 1.5rem;
+
     cursor: pointer;
 }
 
-.teclas button:hover {
-    transform: scale(1.1);
+.teclas button:hover{
+    border: 1px solid white;
+    transform: scale(1.2);
 }
 
-.teclas button:disabled {
-    cursor: not-allowed;
+.teclas button.errada{
+    background-image: url("imagens/teclaErrada.png");
 }
 
-/*---RODAPÉ---*/
+.teclas button.certa{
+    background-image: url("imagens/teclaCerta.png");
+}
+
+.teclas button#reiniciar{
+    background-image: url("imagens/teclaDado.png");
+}
 
 footer {
-    text-align: center;
-    background-color: #2E8B57;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     width: 100%;
-}
+    height: 10%;
 
-footer * {
-    background-color: #2E8B57;
-}
+    border-top: solid #d26500;
 
-.contato {
-    padding: 1.5vh 0 1.5vh;
-}
+    background-color: #592e06;
 
-footer div {
-    display: inline-block;
-    padding: 0 1vh 0 1vh;
+    box-shadow: 0 -2px 2px #00000061;
 }
 
 footer p {
-    color: #FFFFFF;
-    font-size: 1vh;
-    margin-bottom: 1vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    color: white;
 }
 
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding-top: 1vh;
+.links {
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+
+    display: flex;
+    justify-content: space-around;
 }
 
-footer img {
-    display: inline-block;
-    width: 5vh;
-    height: auto;
-    padding: 1vh;
+.links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-label {
-    display: block;
-    font-size: 1vh;
-}
+.links img {
+    width: 2.5rem;
 
-/*---MODAL---*/
+    margin-right: 1rem;
+}
 
 #myModal {
-    margin-top: 30%;
+    margin-top: 40vh;
 }
 
 .modal-content {
     width: 100%;
     aspect-ratio: 16.9;
+
+    background-color: #592e06;
+    border: .25rem solid #d26500;
 }
 
 .modal-close {
-    font-size: 3vh;
+    font-size: 5vh;
+
+    color: #FFFFFF;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-title, .modal-body, .modal-button {
+    font-family: "pixel";
+    text-shadow: 2px 2px 2px #00000061;
+
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
 }
 
 .modal-title {
-    font-size: 3vh;
-    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .modal-body {
-    font-size: 2vh;
+    font-size: 1rem;
     font-style: italic;
 }
 
 .modal-button {
-    color: #FFFFFF;
     font-size: 1.5vh;
-    background-color: #3CB371;
+    background-color: #721616;
     border: none;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1000px) {
+
+    .links {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    #iniciar {
+        font-size: 1rem;
+    }
+
     footer{
-        position: fixed;
-        bottom: 0;
-        left: 0
+        flex-direction: column;
     }
-}
 
-@media (orientation: landscape) {
-    .teclas button {
-        font-size: 2.5vw;
-        width: 4vw;
-        margin: 0 0.2vw 0.4vw 0.2vw;
+    footer p {
+        font-size: .8rem;
     }
-    
-    footer img {
-        width: 5vw;
-    }
-    
-    footer p, label {
-        font-size: 2vw;
-    }
-    
-    #myModal {
-        margin-top: 10%;
-    }
-}
 
-@media screen and (min-width: 1200px) {
-    header {
-        height: 8vh;
-    }
-    #categoria, #iniciar, .letras, .letrasEspaco {
-        font-size: 5vh;
-    }
-    #imagem {
-        width: 30vh;
-        height: auto;
-    }
+    .links img {
+        width: 1.5rem;
     
-    footer {
-        max-height: 100%;
-        position: fixed;
-        bottom: 0;
-        left: 0
-    }
-    
-    .contato {
-        padding: 1.5vw 0 1.5vw;
-    }
-    
-    footer img {
-        width: 3vw;
-    }
-    
-    footer p, label {
-        font-size: 1vw;
-    }
-    
-    #myModal {
-        margin-top: 20%;
+        margin: .5rem;
     }
 }
