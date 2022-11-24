@@ -243,6 +243,7 @@ footer p {
 
     #iniciar {
         font-size: 0.8rem;
+        transform: scale(1.5);
     }
 
     footer{
