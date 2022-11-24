@@ -52,6 +52,8 @@ header {
 
     margin: 2vh 0;
 
+    border: none;
+
     background-image: url("imagens/iniciar.png");
     background-size: cover;
 
@@ -224,14 +226,23 @@ footer p {
 
 @media (max-width: 1000px) {
 
+    .teclas button:hover{
+        border: none;
+        transform: scale(1.0);
+    }
+
     .links {
         position: static;
     }
 }
 
 @media (max-width: 600px) {
+    .teclas button {
+        font-size: 1.3rem;
+    }
+
     #iniciar {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     footer{
