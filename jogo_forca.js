@@ -357,4 +357,16 @@ function reiniciarJogo(){
     iniciar();
 }
 
+document.addEventListener("keydown", tecla =>{
+    let letra = tecla.key.toUpperCase();
+
+    if(alfabeto.includes(letra)){
+        checarLetra(letra);
+    }
+
+    if(tecla.key == "Enter"){
+        reiniciarJogo();
+    }
+}) 
+
 sorteiaPalavra();
